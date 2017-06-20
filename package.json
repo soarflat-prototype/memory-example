@@ -1,0 +1,27 @@
+{
+  "name": "memory-example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "server": "browser-sync start --server 'public' --files 'public/**/*'",
+    "build:css": "node-sass --output-style compressed -o public/css src/scss",
+    "build:js": "webpack",
+    "build": "npm-run-all build:*",
+    "watch:css": "npm run build:css -- --watch",
+    "watch:js": "webpack --watch",
+    "watch": "npm-run-all --parallel watch:*"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.0.2",
+    "webpack": "^3.0.0"
+  },
+  "dependencies": {
+    "events": "^1.1.1",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "reset-css": "^2.2.0",
+    "velocity-animate": "^1.5.0"
+  }
+}

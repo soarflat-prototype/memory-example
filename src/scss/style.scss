@@ -1,0 +1,103 @@
+@import 'node_modules/reset-css/_reset';
+
+h1 {
+  display: block;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+  background: mediumblue;
+}
+
+.game {
+
+}
+
+.opening {
+  background: gray;
+
+  .opening-button {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    padding: 10px;
+    width: 80%;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 0;
+    background: deepskyblue;
+  }
+}
+
+.play {
+  background: green;
+}
+
+.cards {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .card {
+    float: left;
+    padding: 50px 0;
+    width: 33.3%;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+    background: #000;
+    box-sizing: border-box;
+
+    &.flipped {
+      background: darkred;
+    }
+  }
+}
+
+.count {
+  padding: 20px 0;
+  background: yellowgreen;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.good {
+  display: block;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+  width: 100%;
+  background: blue;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.bad {
+  display: block;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+  width: 100%;
+  background: red;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+}
